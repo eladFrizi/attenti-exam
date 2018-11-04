@@ -8,10 +8,8 @@
     "dev": "nodemon",
     "start": "npm run build && node dist/index.js",
     "copy-public": "cpy 'src/public/*' dist/public && cpy 'src/public/lib/*' dist/public/lib && cpy 'src/public/cmps/*' dist/public/cmps",
-    "clean-dist": "rimraf dist",
-    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
-    "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production;"
-  },
+    "clean-dist": "rimraf dist"
+   },
   "keywords": [],
   "author": "",
   "license": "ISC",
