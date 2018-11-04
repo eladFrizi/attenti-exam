@@ -1,0 +1,22 @@
+
+
+<ClassList>
+
+<Offender>  
+		<FirstName>Test</FirstName>  
+		<LastName>Attenti</LastName>  
+		<DateOfBirth>10/10/2017</DateOfBirth>  
+</Offender>
+
+<Address>
+		<State>Iseal</State>
+		<City>Tel Aviv</City>
+		<Street>HaYarkon</Street>
+		<HomeNumber>20</HomeNumber>
+		<ZipCode>20</ZipCode>
+</Address>
+
+<Elad>
+	<Food>Pizza</Food>
+</Elad>
+</ClassList>

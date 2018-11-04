@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    border: 1px solid black;
+    max-width: 980px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr ;
+    grid-template-rows: 400px 400px;
+    grid-template-areas: 
+                "type-information rule-information ."
+                "results results test-criteria"
+}
+
+.container > * {
+    padding: 3px;
+    border: 0.1px solid black;
+}
+
+
+.type-information{
+    grid-area: type-information;
+}
+
+.rule-information{
+    grid-area: rule-information;
+
+}
+.results{
+    grid-area: results;
+    height: 100%;
+    overflow-y: scroll;
+}
+.test-criteria{
+    grid-area: test-criteria;
+}
+
+summary {
+    cursor: pointer;
+}

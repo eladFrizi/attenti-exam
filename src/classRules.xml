@@ -1,0 +1,10 @@
+<RuleList>
+	<Offender>  
+		<FirstName>Contains "R"</FirstName>
+		<LastName>Contains "e"</LastName>
+		<DateOfBirth>GreaterThan 12/10/2017</DateOfBirth>
+	</Offender>
+	<Address>
+			<Street>Contains "v"</Street>
+	</Address>
+</RuleList>
