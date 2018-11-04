@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "npm run clean-dist && tsc && npm run copy-public ",
     "dev": "nodemon",
-    "start": "ts-node ./src/index.ts"
+    "start": "npm run build && node dist/index.js",
+    "copy-public": "cpy 'src/public/*' dist/public && cpy 'src/public/lib/*' dist/public/lib && cpy 'src/public/cmps/*' dist/public/cmps",
+    "clean-dist": "rimraf dist"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +19,6 @@
     "body-parser-xml": "^1.1.0",
     "express": "^4.16.4",
     "express-xml-bodyparser": "^0.3.0",
-    "is-string": "^1.0.4",
     "moment": "^2.22.2",
     "xml2json": "^0.11.2"
   },
@@ -28,7 +29,9 @@
     "@types/moment": "^2.13.0",
     "@types/node": "^10.12.1",
     "@types/xml2json": "^0.10.0",
+    "cpy-cli": "^2.0.0",
     "nodemon": "^1.18.5",
+    "rimraf": "^2.6.2",
     "ts-node": "^7.0.1",
     "typescript": "^3.1.5"
   }
